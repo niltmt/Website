@@ -20,42 +20,63 @@
 	</head>
 	<body bgcolor="white">
 		<script>
-			
+			function buttonDevs() {
+				var devsTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>Contacts info</font>";
+				document.getElementById("title").innerHTML = devsTitleHTML;
+				var devsContent = "<br>\
+					<img src='images/contact_dung.png'></img>\
+					<p align='right'><img src='images/contact_binh.png'></img></p>\
+					<img src='images/contact_duy.png'></img>"
+				document.getElementById("content").innerHTML = devsContent;
+				} // Card style is credited to Lukas Flekal - http://flekal.com/ for original idea
+				
+			function buttonKiosk() {
+				var kioskTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>VGU Information Kiosk Software</font>";
+				document.getElementById("title").innerHTML = kioskTitleHTML;
+				var kioskContent = "<tt><br>\
+					Ver 14.12.18<br><br>\
+					Copyright (C) 2014 - By Group6_CS2014(CD) VGU.<br><br>\
+					This project is under GNU General Public License.<br>\
+					It is free and always be free.<br><br>\
+					<a href='http://www.gnu.org/licenses/'>More about GPL</a><br>\
+					<a href='https://github.com/niltmt/Website'>Source code for the whole project is provided here</a>\
+					<br><br></tt>"
+				document.getElementById("content").innerHTML = kioskContent;
+			}
 		</script>
 		<center>
 			<img src="images/top_about.png" usemap="#top_intro"></img>
 			<table width="782" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="202" height="50%" bgcolor="#fff">
-						<img src="images/about_kiosk.png"></img>
+					<td width="202" valign="top" bgcolor="#fff">
 						<br><br>
-						<img src="images/about_devs.png"></img>
+						<input type="image" src="images/about_kiosk.png" onclick="buttonKiosk()">
+						<br><br>
+						<input type="image" src="images/about_devs.png" onclick="buttonDevs()">
+						<br><br>
+						<input type="image" src="images/about_instruct.png" onclick="buttonInstruct()">						
 					</td>
-					<td width="580" bgcolor="#fff" rowspan="2">
-						<br>
-						<p id="content">
-							<font size="+3" face="Arial, Helvetica">
-								VGU Information Kiosk Software<br>
-							</font>
-							<hr />
-							<font face="Arial, Helvetica" size="+1">
-								<pre>
-Ver 14.12.18
-
-Copyright (C) 2014 - By Group6_CS2014(CD) VGU.
-
-This project is under GNU General Public License.
-It is free and always be free.
-
-<a href="http://www.gnu.org/licenses/">More about GPL</a>
-<a href="https://github.com/niltmt/Website">Source code for the whole project is provided here.</a>
-								</pre>
+					<td width="580" valign="top" bgcolor="#fff">
+						<p id="title">
+							<br>
+							<font size="+3" face="Arial, Helvetica" color="#ff6000">
+								VGU Information Kiosk Software
 							</font>
 						</p>
-					</td>
-				</tr>
-				<tr>
-					<td height="30%">
+						<hr noshade/>
+						<font face="Arial, Helvetica" size="+1">
+							<p id="content">
+								<tt>
+									<br>
+									Ver 14.12.18<br><br>
+									Copyright (C) 2014 - By Group6_CS2014(CD) VGU.<br><br>
+									This project is under GNU General Public License.<br>
+									It is free and always be free.<br><br>
+									<a href="http://www.gnu.org/licenses/">More about GPL</a><br>
+									<a href="https://github.com/niltmt/Website">Source code for the whole project is provided here</a>
+								</tt>
+							</p>
+						</font>
 					</td>
 				</tr>
 			<table>
