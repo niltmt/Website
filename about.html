@@ -16,7 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/-->
 <html>
 	<head>
-		<title>Info Kiosk - History</title>
+		<title>Info Kiosk - About</title>
 	</head>
 	<body bgcolor="white">
 		<script>
@@ -42,6 +42,14 @@
 					<a href='https://github.com/niltmt/Website'>Source code for the whole project is provided here</a>\
 					<br><br></tt>"
 				document.getElementById("content").innerHTML = kioskContent;
+			}
+			
+			function buttonInstruct() {
+				var instructTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>Kiosk Manual</font>";
+				document.getElementById("title").innerHTML = instructTitleHTML;
+				var instructContent = "<br>\
+					<img src='images/instruct.png' usemap='instruct_map'></img>"
+				document.getElementById("content").innerHTML = instructContent;
 			}
 		</script>
 		<center>
