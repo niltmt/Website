@@ -16,26 +16,115 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/-->
 <html>
 	<head>
-		<title>Info Kiosk - History</title>
+		<title>Info Kiosk - Key people</title>
 	</head>
 	<body bgcolor="#fff">
+		<script>
+			function buttonGeneral() {
+				var generalTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>Meet VGU Staffs</font>";
+				document.getElementById("title").innerHTML = generalTitleHTML;
+				var generalContent = "<br>\
+					Staff of VGU consists of two elements: The permanent staff members of the study-programs and VGU's administration, \
+					and the &quotFlying Faculty&quot composed of professors from our German partner-universities. The organizational structure \
+					is under constant development according to the progress of VGU's steady growth. The next step will be the foundation of \
+					faculties and other academic institutions."
+				document.getElementById("content").innerHTML = generalContent;
+				document.getElementById("image1").innerHTML = "<img src='images/people_1.jpg'></img>";
+			}
+			function buttonAdmin() {
+				var adminTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>VGU Administration Staffs</font>";
+				document.getElementById("title").innerHTML = adminTitleHTML;
+				var adminContent = "<center>\
+				<a href='#' onclick='buttonAdminPreBo()'><img src='images/people_prebo.png'></img></a>&nbsp&nbsp&nbsp&nbsp\
+				<a href='#' onclick='buttonAdminIt()'><img src='images/people_itde.png'></img></a><br><br>\
+				<a href='#' onclick='buttonAdminAcaAff()'><img src='images/people_acaaff.png'></img></a>&nbsp&nbsp&nbsp&nbsp\
+				<a href='#' onclick='buttonAdminStuAff()'><img src='images/people_stuaff.png'></img></a></center>"
+				document.getElementById("content").innerHTML = adminContent;
+				document.getElementById("image1").innerHTML = " ";
+			}
+			function buttonAdminPreBo() {
+				var adminPreBoTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>Presidential Board</font>";
+				document.getElementById("title").innerHTML = adminPreBoTitleHTML;
+				var adminPreBoContent = "\
+					<a href='mailto:Juergen.Mallon@vgu.edu.vn'><img src='images/people_mallon.png'></img></a><br><br>\
+					<a href='mailto:vien.ht@vgu.edu.vn'><img src='images/people_vien.png'></img></a><br><br>\
+					<a href='mailto:hung.nl@vgu.edu.vn'><img src='images/people_hung.png'></img></a><br><br>\
+					<a href='mailto:mathias.neukirchen@vgu.edu.vn'><img src='images/people_neukirchen.png'></img></a>"
+				document.getElementById("content").innerHTML = adminPreBoContent;
+			}
+			function buttonAdminIt() {
+				var adminItTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>IT Department</font>";
+				document.getElementById("title").innerHTML = adminItTitleHTML;
+				var adminItContent = "\
+					<a href='mailto:hung.dq@vgu.edu.vn'><img src='images/people_dqhung.png'></img></a><br><br>\
+					<a href='mailto:trung.pm@vgu.edu.vn'><img src='images/people_pmtrung.png'></img></a><br><br>\
+					<a href='mailto:minh.th@vgu.edu.vn'><img src='images/people_thminh.png'></img></a>"
+				document.getElementById("content").innerHTML = adminItContent;
+			}
+			function buttonAdminAcaAff() {
+				var adminAcaAffTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>Academic Affairs</font>";
+				document.getElementById("title").innerHTML = adminAcaAffTitleHTML;
+				var adminAcaAffContent = "\
+					<a href='mailto:s.heimlicher@vgu.edu.vn'><img src='images/people_silke.png'></img></a><br><br>\
+					<a href='mailto:lan.dtn@vgu.edu.vn'><img src='images/people_lan.png'></img></a><br><br>\
+					<a href='mailto:phuong.nt@vgu.edu.vn'><img src='images/people_phuong.png'></img></a><br><br>\
+					<a href='mailto:dung.nt@vgu.edu.vn'><img src='images/people_nttdung.png'></img></a><br><br>\
+					<a href='mailto:nga.ht@vgu.edu.vn'><img src='images/people_nga.png'></img></a>"
+				document.getElementById("content").innerHTML = adminAcaAffContent;
+			}
+			function buttonAdminStuAff() {
+				var adminStuAffTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>Student Affairs</font>";
+				document.getElementById("title").innerHTML = adminStuAffTitleHTML;
+				var adminStuAffContent = "\
+					<a href='mailto:hanh.lt@vgu.edu.vn'><img src='images/people_hanh.png'></img></a><br><br>\
+					<a href='mailto:thu.nht@vgu.edu.vn'><img src='images/people_nhtthu.png'></img></a><br><br>\
+					<a href='mailto:hoa.nt@vgu.edu.vn'><img src='images/people_hoa.png'></img></a>"
+				document.getElementById("content").innerHTML = adminStuAffContent;
+			}
+			function buttonLect() {
+				var adminTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>VGU Administration Staffs</font>";
+				document.getElementById("title").innerHTML = adminTitleHTML;
+				var adminContent = "<br><br><br><br><br>\
+				<a href='#' onclick='buttonAdminPreBo()'>Presidential Board</a><br>\
+				<a href='#' onclick='buttonAdminIt()'>IT Department</a><br>\
+				<a href='#' onclick='buttonAdminAcaAff()'>Academic Affairs</a><br>\
+				<a href='#' onclick='buttonAdminStuAff()'>Student Affairs</a>"
+				document.getElementById("content").innerHTML = adminContent;
+				document.getElementById("image1").innerHTML = " ";
+			}
+			</script>
 		<center>
 			<img src="images/top_people.png" usemap="#top_intro"></img>
-			<table width="782" height="100%" border="0" cellspacing="0" cellpadding="0">
+			<table width="782" border="0" cellspacing="0" cellpadding="0">
 				<tr>
-					<td width="782" bgcolor="#fff">
-						<br>
-						<p>
-							The Vietnamese-German University (VGU) is a Vietnamese state university. Founded in 2008, VGU is based on a close cooperation between the Socialist Republic of Vietnam and the German State Hessen. Within the past years the project broadened to a German-wide cooperation.
-							<br><br>
-							Our goal is to build a research-oriented university of world standard in Ho-Chi-Minh City. Being a joint effort of Vietnamese and German institutions, we follow the successful German model and standards concerning our academic and administrative structure.
-							<br><br>
-							VGU's strategy is to import excellent German study programs, taken from the strongest engineering areas of Germany and customize them to the needs of Vietnamese higher education. While being in a transitional phase, our study programs are run by German partner universities which ensure their high quality by sending experienced professors from Germany. After a successful study students receive a German university degree, providing them with best opportunities on the job-market.
-							<br><br>
-							Given the mission by the Vietnamese government, VGU aims to become the leading research university in Vietnam and the region. Focusing on High-Tech Engineering and Sustainable Development, we seek to train excellent academics and to provide ample qualification to Vietnamese university lecturers, so they can compete on an international level.  
-							<br><br>
-							VGU's profile is unique: German study programs and German degrees provide for an exceptional education of highest standards. That's why studying at VGU ensures best opportunities on the job-market - we make it possible for students to benefit from excellent study programs and to succeed on an internationally competitive level.
+					<td width="202" valign="top" bgcolor="#fff">
+						<br><br>
+						<input type="image" src="images/people_general.png" alt="General" onclick="buttonGeneral()">
+						<br><br>
+						<input type="image" src="images/people_lect.png" alt="Lecturers" onclick="buttonLect()">
+						<br><br>
+						<input type="image" src="images/people_admin.png" alt="Administrators" onclick="buttonAdmin()">						
+					</td>
+					<td width="580" valign="top" bgcolor="#fff">
+						<p id="title">
+							<br>
+							<font size="+3" face="Arial, Helvetica" color="#ff6000">
+								Meet VGU Staffs
+							</font>
 						</p>
+						<hr noshade/>
+						<font face="Times New Roman, Helvetica" size="+1">
+							<p id="content" align="justify">
+								<br>
+								Staff of VGU consists of two elements: The permanent staff members of the study-programs and VGU's administration, 
+								and the "Flying Faculty" composed of professors from our German partner-universities. The organizational structure 
+								is under constant development according to the progress of VGU's steady growth. The next step will be the foundation of 
+								faculties and other academic institutions.
+							</p>
+							<p id="image1" align="center">
+								<img src="images/people_1.jpg"></img>
+							</p>
+						</font>
 					</td>
 				</tr>
 			<table>
