@@ -23,10 +23,10 @@
 			function buttonDevs() {
 				var devsTitleHTML = "<br><font size='+3' face='Arial, Helvetica' color='#ff6000'>Contacts info</font>";
 				document.getElementById("title").innerHTML = devsTitleHTML;
-				var devsContent = "<br>\
+				var devsContent = "<center>\
 					<img src='images/contact_dung.png'></img>\
-					<p align='right'><img src='images/contact_binh.png'></img></p>\
-					<img src='images/contact_duy.png'></img>"
+					<img src='images/contact_binh.png'></img>\
+					<img src='images/contact_duy.png'></img></center>"
 				document.getElementById("content").innerHTML = devsContent;
 				} // Card style is credited to Lukas Flekal - http://flekal.com/ for original idea
 				
@@ -58,11 +58,11 @@
 				<tr>
 					<td width="202" valign="top" bgcolor="#fff">
 						<br><br>
-						<input type="image" src="images/about_kiosk.png" onclick="buttonKiosk()">
+						<input type="image" src="images/about_kiosk.png" alt="Kiosk info" onclick="buttonKiosk()">
 						<br><br>
-						<input type="image" src="images/about_devs.png" onclick="buttonDevs()">
+						<input type="image" src="images/about_devs.png" alt="Developers" onclick="buttonDevs()">
 						<br><br>
-						<input type="image" src="images/about_instruct.png" onclick="buttonInstruct()">						
+						<input type="image" src="images/about_instruct.png" alt="Kiosk instuction" onclick="buttonInstruct()">						
 					</td>
 					<td width="580" valign="top" bgcolor="#fff">
 						<p id="title">
